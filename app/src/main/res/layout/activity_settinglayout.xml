@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".settings_fragmentclass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+        android:background="@color/colorPrimaryDark">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/profileCircleImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorAccent"
+                    android:src="@drawable/usersetting"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:text="Username"
+                    android:layout_toRightOf="@id/profileCircleImageView"
+                    android:layout_marginTop="20dp"
+
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                     />
+
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="personal details"
+                    android:textSize="16sp"
+                    android:textColor="@color/login_form_details_medium"
+                    android:layout_below="@id/usernameTextView"
+                    android:layout_toRightOf="@id/profileCircleImageView"/>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Profile"/>
+
+            <TextView
+                android:id="@+id/change_photo"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="10dp"
+
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:text="Change Profile Photo" />
+            <TextView
+                android:id="@+id/change_status"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_languages"
+                android:text="Change status" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Account"/>
+
+            <TextView
+                android:id="@+id/change_motpass"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_edit_password"
+                android:layout_marginTop="10dp"
+                android:text="Change Password" />
+            <TextView
+                android:id="@+id/delete_account"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_remove"
+                android:text="Delete Account" />
+
+
+            <TextView
+                android:id="@+id/logout"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:drawablePadding="20dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_logout"
+                android:text="Logout" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#808080"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="App ver 1.0.3"
+                android:textAlignment="center"/>
+
+
+    </LinearLayout></ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff1f3c53</color>
+    <color name="colorPrimaryDark">#ff142a3b</color>
+    <color name="colorAccent">#04BAFF</color>
+    <color name="pressedcolorAccent">#0484C3</color>
+    <color name="dark_blue">#ff142a3b</color>
+    <color name="text_grey">#ffbcc5d3</color>
+
+    <color name="login_form_details">#ccffffff</color>
+    <color name="login_form_details_light">#1affffff</color>
+    <color name="login_form_details_medium">#66ffffff</color>
+
+
+    <color name="background">#e5e5e5</color>
+    <color name="white">#fafafa</color>
+    <color name="transparent2">#00000000</color>
+
+</resources>

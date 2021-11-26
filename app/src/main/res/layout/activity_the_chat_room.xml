@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".the_chat_room">
+
+    <FrameLayout android:id="@+id/framelay"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" />
+
+    <include
+        android:id="@+id/chat_app_bar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+
+
+        />
+
+    <ImageButton
+        android:id="@+id/gotochat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:adjustViewBounds="true"
+        android:layout_gravity="top|right"
+        android:background="@drawable/btn_return"
+
+        android:contentDescription="@string/logo"
+        android:overScrollMode="always"
+
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/message_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/chat_app_bar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/messages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@+id/chat_app_bar"
+            android:layout_alignParentStart="true"></android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/chat_add_btn"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/btn_return"
+            android:contentDescription="@string/todo"
+            android:padding="10dp"
+            android:src="@drawable/ic_attach_file_black_24dp">
+
+        </ImageButton>
+
+
+        <EditText
+            android:id="@+id/chat_message_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:hint="@string/enter_message"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingTop="14dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/text_grey"
+            android:textColorHint="@color/text_grey" />
+
+
+        <ImageButton
+            android:id="@+id/chat_send_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/tryy"
+            android:contentDescription="@string/todo2"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_forward_black_24dp"></ImageButton>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
